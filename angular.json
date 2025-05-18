@@ -62,6 +62,11 @@
         },
         "serve": {
           "builder": "@angular-devkit/build-angular:dev-server",
+            "options": {
+    "outputPath": "dist/dynamicchartdemo/server",
+    "main": "src/main.server.ts",
+    "tsConfig": "tsconfig.server.json"
+  },
           "configurations": {
             "production": {
               "buildTarget": "dynamicchartdemo:build:production"
